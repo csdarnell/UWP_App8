@@ -33,13 +33,13 @@
                 <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0" Grid.Column="0" Text="Street"/>
-            <TextBox Grid.Row="0" Grid.Column="2"/>
+            <TextBox Grid.Row="0" Grid.Column="2" Text="{Binding Path=ViewModel.Address.Street, Mode=TwoWay }"/>
             <TextBlock Grid.Row="1" Grid.Column="0" Text="City"/>
-            <TextBox Grid.Row="1" Grid.Column="2" />
+            <TextBox Grid.Row="1" Grid.Column="2" Text="{Binding Path=ViewModel.Address.City, Mode=TwoWay}"/>
             <TextBlock Grid.Row="2" Grid.Column="0" Text="State"/>
-            <TextBox Grid.Row="2" Grid.Column="2"/>
+            <TextBox Grid.Row="2" Grid.Column="2" Text="{Binding Path=ViewModel.Address.State, Mode=TwoWay}" />
             <TextBlock Grid.Row="3" Grid.Column="0" Text="Zip Code"/>
-            <TextBox Grid.Row="3" Grid.Column="2"/>
+            <TextBox Grid.Row="3" Grid.Column="2" Text="{Binding Path=ViewModel.Address.Zip, Mode=TwoWay}"/>
         </Grid>
     </Grid>
 </Page>
