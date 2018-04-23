@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using UWP_App8.Models;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -22,9 +23,18 @@ namespace UWP_App8
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public Address ViewModel { get; set; }
+
         public MainPage()
         {
             this.InitializeComponent();
+            this.ViewModel = new Address
+            {
+                Street = "1600 Pennsylvania Avenue, NW.",
+                City = "Washington",
+                State = "DC",
+                Zip = "20500"
+            };    
         }
     }
 }
